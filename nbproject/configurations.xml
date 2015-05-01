@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>CLM.h</itemPath>
+      <itemPath>FCheck.h</itemPath>
+      <itemPath>FDet.h</itemPath>
+      <itemPath>IO.h</itemPath>
+      <itemPath>PAW.h</itemPath>
+      <itemPath>PDM.h</itemPath>
+      <itemPath>Patch.h</itemPath>
+      <itemPath>Tracker.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>CLM.cpp</itemPath>
+      <itemPath>FCheck.cpp</itemPath>
+      <itemPath>FDet.cpp</itemPath>
+      <itemPath>FaceTracker.cpp</itemPath>
+      <itemPath>IO.cpp</itemPath>
+      <itemPath>PAW.cpp</itemPath>
+      <itemPath>PDM.cpp</itemPath>
+      <itemPath>Patch.cpp</itemPath>
+      <itemPath>Tracker.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+        </ccTool>
+        <linkerTool>
+          <output>FaceTracker</output>
+          <linkerLibItems>
+            <linkerLibLibItem>opencv_core</linkerLibLibItem>
+            <linkerLibLibItem>opencv_highgui</linkerLibLibItem>
+            <linkerLibLibItem>opencv_imgproc</linkerLibLibItem>
+            <linkerLibLibItem>opencv_features2d</linkerLibLibItem>
+            <linkerLibLibItem>opencv_objdetect</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <packaging>
+        <packType>Tar</packType>
+        <output>FaceTracker.tar</output>
+        <packFileList>
+          <packFileListElem type="File"
+                            to="${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}"
+                            from="${OUTPUT_PATH}"
+                            perm="755"
+                            owner="root"
+                            group="bin"/>
+        </packFileList>
+      </packaging>
+      <item path="CLM.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CLM.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="FCheck.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FCheck.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="FDet.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FDet.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="FaceTracker.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="IO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="IO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PAW.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PAW.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PDM.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PDM.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Patch.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Patch.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Tracker.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Tracker.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+        </ccTool>
+        <linkerTool>
+          <output>FaceTracker</output>
+          <linkerLibItems>
+            <linkerLibLibItem>opencv_core</linkerLibLibItem>
+            <linkerLibLibItem>opencv_highgui</linkerLibLibItem>
+            <linkerLibLibItem>opencv_imgproc</linkerLibLibItem>
+            <linkerLibLibItem>opencv_features2d</linkerLibLibItem>
+            <linkerLibLibItem>opencv_objdetect</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <packaging>
+        <packType>Tar</packType>
+        <output>FaceTracker.tar</output>
+        <packFileList>
+          <packFileListElem type="File"
+                            to="${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}"
+                            from="${OUTPUT_PATH}"
+                            perm="755"
+                            owner="root"
+                            group="bin"/>
+        </packFileList>
+      </packaging>
+      <item path="CLM.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CLM.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="FCheck.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FCheck.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="FDet.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FDet.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="FaceTracker.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="IO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="IO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PAW.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PAW.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PDM.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PDM.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Patch.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Patch.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Tracker.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Tracker.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
