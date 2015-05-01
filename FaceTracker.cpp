@@ -128,7 +128,8 @@ void detectAndDisplay(Mat &processFrameGrey, Mat &displayFrameMultiChannel, Casc
                 maxRadius = radius;
             } else {
                 //print coordinates back to the original coordinate space of the input image 
-                facePositions += " " + std::to_string(int((faces[i].x + faces[i].width * 0.5) / scale_for_process))
+                facePositions += facePositions.length()>0?" ":"" + 
+                        std::to_string(int((faces[i].x + faces[i].width * 0.5) / scale_for_process))
                         + " " + std::to_string(int((faces[i].y + faces[i].height * 0.5) / scale_for_process))
                         + " " + std::to_string(int((faces[i].width + faces[i].height) * 0.25 / scale_for_process));
             }
